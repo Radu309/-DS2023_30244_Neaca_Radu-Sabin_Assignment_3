@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="chatService module init" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2WdNDZy60jKDgjDlCl1SSvP409A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/An_4/DS/DS2023_30244_Neaca_Radu-Sabin_Assignment_2/frontend_service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6c05c1b8aab644313fb23850d4d2ce13&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\An_4\DS\Assignment1\DS2023_30244_Neaca_Radu-Sabin_1_Backend\RabbitMQ_producer" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.App" />
+      <module name="RabbitMQ_producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecondApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SecondApp" />
+      <module name="RabbitMQ_producer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="ChatServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="chat_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.chat_service.ChatServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeviceServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="device_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.device_service.DeviceServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MonitoringServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="monitoring_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="project.monitoring_service.MonitoringServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <module name="user_service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.user_service.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml.device-container: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="device-container" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.monitoring-container: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="monitoring-container" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.SecondApp" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Docker.docker-compose.yml.device-container: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yml.monitoring-container: Compose Deployment" />
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="Spring Boot.ChatServiceApplication" />
+      <item itemvalue="Spring Boot.MonitoringServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
+      <item itemvalue="Spring Boot.DeviceServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.SecondApp" />
+        <item itemvalue="Docker.docker-compose.yml.monitoring-container: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.device-container: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="" />
+      <created>1697058380909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697058380909</updated>
+      <workItem from="1697058382613" duration="1788000" />
+      <workItem from="1697060185645" duration="90000" />
+      <workItem from="1697094791316" duration="4481000" />
+      <workItem from="1697550375189" duration="11527000" />
+      <workItem from="1697974402518" duration="23713000" />
+      <workItem from="1698153639946" duration="25052000" />
+      <workItem from="1698308331490" duration="1307000" />
+      <workItem from="1698330136910" duration="27690000" />
+      <workItem from="1698527836276" duration="599000" />
+      <workItem from="1698528897145" duration="20366000" />
+      <workItem from="1698684449460" duration="16352000" />
+      <workItem from="1698702330113" duration="2326000" />
+      <workItem from="1698735198700" duration="5910000" />
+      <workItem from="1698743862788" duration="17595000" />
+      <workItem from="1699131662361" duration="9770000" />
+      <workItem from="1699192538167" duration="914000" />
+      <workItem from="1699193479155" duration="17547000" />
+      <workItem from="1699266450810" duration="3570000" />
+      <workItem from="1699298579886" duration="20921000" />
+      <workItem from="1699362047668" duration="6196000" />
+      <workItem from="1699373080084" duration="941000" />
+      <workItem from="1699452250820" duration="53000" />
+      <workItem from="1699603648796" duration="15000" />
+      <workItem from="1699640303907" duration="601000" />
+      <workItem from="1699907992976" duration="579000" />
+      <workItem from="1699970894870" duration="353000" />
+      <workItem from="1699975484559" duration="3883000" />
+      <workItem from="1700152323266" duration="7000" />
+      <workItem from="1700428638657" duration="730000" />
+      <workItem from="1700517298528" duration="1287000" />
+      <workItem from="1700574974337" duration="25244000" />
+      <workItem from="1701107994717" duration="29889000" />
+      <workItem from="1701347846631" duration="58616000" />
+      <workItem from="1701640969836" duration="909000" />
+      <workItem from="1701687514079" duration="31817000" />
+      <workItem from="1702218792415" duration="783000" />
+      <workItem from="1702240201452" duration="45000" />
+      <workItem from="1702286235562" duration="280000" />
+      <workItem from="1702287152239" duration="813000" />
+      <workItem from="1702287987907" duration="252000" />
+      <workItem from="1702288260513" duration="1818000" />
+      <workItem from="1702290165368" duration="310000" />
+      <workItem from="1702290495880" duration="285000" />
+      <workItem from="1702290800526" duration="1362000" />
+      <workItem from="1702292408283" duration="400000" />
+      <workItem from="1702302944244" duration="755000" />
+      <workItem from="1702317490286" duration="40811000" />
+      <workItem from="1702471890084" duration="1074000" />
+      <workItem from="1702473337280" duration="1206000" />
+      <workItem from="1702474564322" duration="710000" />
+      <workItem from="1702475293588" duration="481000" />
+    </task>
+    <task id="LOCAL-00001" summary="testing">
+      <created>1697558180438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697558180438</updated>
+    </task>
+    <task id="LOCAL-00002" summary="CRUD READY">
+      <created>1698514848565</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698514848565</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ready for 5!!!">
+      <created>1698615930872</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698615930872</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ready for 9.50">
+      <created>1699193872109</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699193872109</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ready for 9.50">
+      <created>1699193925598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699193925598</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ready for 10">
+      <created>1699206787529</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699206787529</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ready with docker!">
+      <created>1699220201216</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699220201216</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ready for assignment">
+      <created>1699347084031</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699347084032</updated>
+    </task>
+    <task id="LOCAL-00009" summary="undeva la nota 8..9">
+      <created>1701561046385</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1701561046385</updated>
+    </task>
+    <task id="LOCAL-00010" summary="READY!">
+      <created>1701796541200</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701796541200</updated>
+    </task>
+    <task id="LOCAL-00011" summary="READY!">
+      <created>1702290701822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702290701822</updated>
+    </task>
+    <task id="LOCAL-00012" summary="READY!">
+      <created>1702303452212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702303452212</updated>
+    </task>
+    <task id="LOCAL-00013" summary="admin can chat with multiple clients from user_service.">
+      <created>1702471361318</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1702471361319</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chatService module init">
+      <created>1702473136110</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473136110</updated>
+    </task>
+    <task id="LOCAL-00015" summary="chatService module init">
+      <created>1702473751939</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1702473751939</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/DS2023_30244_Neaca_Radu-Sabin_1_Frontend" />
+      <path value="$PROJECT_DIR$/frontend_service" />
+      <path value="$PROJECT_DIR$/monitoring_service" />
+      <path value="$PROJECT_DIR$/chat_service" />
+    </ignored-roots>
+    <MESSAGE value="testing" />
+    <MESSAGE value="CRUD READY" />
+    <MESSAGE value="ready for 5!!!" />
+    <MESSAGE value="ready for 9.50" />
+    <MESSAGE value="ready for 10" />
+    <MESSAGE value="ready with docker!" />
+    <MESSAGE value="ready for assignment" />
+    <MESSAGE value="undeva la nota 8..9" />
+    <MESSAGE value="READY!" />
+    <MESSAGE value="admin can chat with multiple clients from user_service." />
+    <MESSAGE value="chatService module init" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatService module init" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

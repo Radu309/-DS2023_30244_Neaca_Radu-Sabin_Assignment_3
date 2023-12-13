@@ -1,0 +1,83 @@
+version: '3'
+
+services:
+  user-container:
+    image: user_service:latest
+    ports:
+      - "8081:8081"
+    environment:
+      DB_IP: mysqldb_container
+      DEVICE_DOMAIN: device-container
+    depends_on:
+      - mysqldb_container
+    networks:
+      - springboot-mysql-net
+
+  device-container:
+    image: device_service:latest
+    ports:
+      - "8082:8082"
+    environment:
+      DB_IP: mysqldb_container
+      RABBIT_DOMAIN: rabbitMQ-container
+    depends_on:
+      - mysqldb_container
+    networks:
+      - springboot-mysql-net
+
+  monitoring-container:
+    image: monitoring-service:latest
+    ports:
+      - "8083:8083"
+    environment:
+      DB_IP: mysqldb_container
+      RABBIT_DOMAIN: rabbitMQ-container
+    depends_on:
+      - mysqldb_container
+      - rabbitMQ-container
+    networks:
+      - springboot-mysql-net
+
+  mysqldb_container:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_PASSWORD: 12345678
+#      MYSQL_DATABASE: ds_2023_devices
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_HOST: '%'
+    networks:
+      - springboot-mysql-net
+
+  front-container:
+    image: ds-frontend:latest
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    depends_on:
+      - user-container
+      - device-container
+    networks:
+      - springboot-mysql-net
+
+  rabbitMQ-container:
+    image: rabbitmq:3.13.0-rc.2-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - springboot-mysql-net
+
+networks:
+  springboot-mysql-net:
+    driver: bridge
+
+
+
+#  docker run -p 3306:3306 --name mysqldb --network springboot-mysql-net -e MYSQL_ROOT_PASSWORD=12345678
+#  -e MYSQL_DATABASE=ds_2023_devices -e MYSQL_PASSWORD=12345678 -d mysql:latest
+
+#    docker run -p8081:8081 --name use_container
+#    --network=springboot-mysql-net -e DEVICE_SERVER_URL=device_container -d user_service:latest
