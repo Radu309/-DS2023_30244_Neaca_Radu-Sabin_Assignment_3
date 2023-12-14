@@ -90,7 +90,7 @@ const UsersGrid = (props) => {
                     ))}
                     {usersMessages.map((userMessage, index) => (
                         (userMessage.activated) && (
-                        <ChatBox user={userMessage.user} rightPos={(index+1)*20 + index * 250}/>
+                        <ChatBox user={userMessage.user} index={index} userRole={'ADMIN'}/>
                         )
                     ))}
                 </div>

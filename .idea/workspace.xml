@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="chatService module init" />
+    <list default="true" id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="chatService module + assignment2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/controller/NotificationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/service/NotificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ChatBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ChatBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ChatBoxClient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/UsersGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UsersGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/ClientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ClientPage.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +97,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ChatServiceApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="RabbitMQ_producer" />
@@ -268,6 +278,10 @@
       <workItem from="1702473337280" duration="1206000" />
       <workItem from="1702474564322" duration="710000" />
       <workItem from="1702475293588" duration="481000" />
+      <workItem from="1702475825236" duration="3763000" />
+      <workItem from="1702492284683" duration="27000" />
+      <workItem from="1702492811849" duration="53000" />
+      <workItem from="1702500355713" duration="16180000" />
     </task>
     <task id="LOCAL-00001" summary="testing">
       <created>1697558180438</created>
@@ -374,7 +388,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702473751939</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="chatService module + assignment2">
+      <created>1702476311308</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1702476311308</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +431,18 @@
     <MESSAGE value="READY!" />
     <MESSAGE value="admin can chat with multiple clients from user_service." />
     <MESSAGE value="chatService module init" />
-    <option name="LAST_COMMIT_MESSAGE" value="chatService module init" />
+    <MESSAGE value="chatService module + assignment2" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatService module + assignment2" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.messaging.MessageDeliveryException" package="org.springframework.messaging" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

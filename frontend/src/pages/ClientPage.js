@@ -5,7 +5,7 @@ import Graphic from "../components/Graphic";
 import DeviceList from "../components/DeviceList";
 import NotificationMessage from "../components/NotificationMessage";
 import 'react-datepicker/dist/react-datepicker.css';
-import ChatBoxClient from "../components/ChatBoxClient";
+import ChatBox from "../components/ChatBox";
 
 const containerStyleColumn = {
     display: 'flex',
@@ -54,8 +54,8 @@ const ClientDevices = (props) => {
                 <SockJsClient
                     url={"http://localhost:8083/ws"}
                     topics={['/topic/notification/' + userId]}
-                    onConnect={console.log("connected")}
-                    onDisconnect={console.log("Disconnected!")}
+                    onConnect={() => console.log("connected")}
+                    onDisconnect={() => console.log("Disconnected!")}
                     onMessage={msg => setMessage(msg)}
                     debug={true}
                 />
@@ -72,7 +72,7 @@ const ClientDevices = (props) => {
                     </div>
                 </div>
             </div>
-            {showMessage && <ChatBoxClient user={props.user}/>}
+            {showMessage && <ChatBox user={props.user} index={0} userRole={'CLIENT'}/>}
         </div>
     );
 };
