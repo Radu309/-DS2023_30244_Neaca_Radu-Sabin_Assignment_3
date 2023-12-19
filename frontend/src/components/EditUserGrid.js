@@ -29,9 +29,17 @@ const EditUserGrid = (props) => {
         password: '',
         userRole: 'Client',
     });
+    const user = JSON.parse(localStorage.getItem('user') || null);
+
     const editUserDevice = () => {
         newUser.userRole = newUser.userRole.toString().toUpperCase();
-        axios.put(process.env.REACT_APP_USER_SERVICE + "/user/update/" + newUser.id, newUser)
+        axios.put(process.env.REACT_APP_USER_SERVICE + "/user/update/" + newUser.id, newUser,
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then(response => {
                 setUpdateUser(prevState => !prevState);
             });

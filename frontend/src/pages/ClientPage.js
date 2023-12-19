@@ -35,9 +35,16 @@ const ClientDevices = (props) => {
     const [measurements, setMeasurements] = useState(null);
     const [message, setMessage] = useState(null);
     const [showMessage, setShowMessage] = useState(false);
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     useEffect(() => {
-        axios.get(process.env.REACT_APP_DEVICE_SERVICE + "/device/all")
+        axios.get(process.env.REACT_APP_DEVICE_SERVICE + "/device/all",
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then(response => {
                 const filteredDevices = response.data.filter(device => device.users.some(user => user.id === props.user.id));
                 setUserDevice(filteredDevices);
@@ -47,7 +54,9 @@ const ClientDevices = (props) => {
     function handleHelpMeClick() {
         setShowMessage(true);
     }
-
+    const websocketHeaders = {
+        "Authorization": "Bearer " + user.token,
+    };
     return (
         <div>
             <div>
@@ -58,6 +67,7 @@ const ClientDevices = (props) => {
                     onDisconnect={() => console.log("Disconnected!")}
                     onMessage={msg => setMessage(msg)}
                     debug={true}
+                    headers={websocketHeaders}
                 />
             </div>
             <div style={containerStyleColumn}>

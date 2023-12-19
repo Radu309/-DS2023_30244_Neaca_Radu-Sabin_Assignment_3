@@ -26,8 +26,17 @@ const MappingGrid = (props) => {
         userId: '',
         deviceId: '',
     });
+    const user = JSON.parse(localStorage.getItem('user') || null);
+
+
     const createUser = () => {
-        axios.get(process.env.REACT_APP_USER_SERVICE + "/user/with-device/" + ids.userId + "/" + ids.deviceId)
+        axios.get(process.env.REACT_APP_USER_SERVICE + "/user/with-device/" + ids.userId + "/" + ids.deviceId ,
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then(response => {
                 setUpdateDevice(prevState => !prevState);
             });

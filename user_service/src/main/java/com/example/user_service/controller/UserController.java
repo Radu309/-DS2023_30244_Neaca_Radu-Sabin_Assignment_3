@@ -3,7 +3,10 @@ package com.example.user_service.controller;
 import com.example.user_service.DTO.UserDto;
 import com.example.user_service.model.User;
 import com.example.user_service.service.UserService;
+import jakarta.servlet.http.HttpServletRequest;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -31,8 +34,9 @@ public class UserController {
         return new ResponseEntity<>(users, HttpStatus.OK);
     }
     @PostMapping("/add")
-    public ResponseEntity<User> addUser(@RequestBody UserDto userDto){
-        User user = userService.addUser(userDto);
+    public ResponseEntity<User> addUser(@RequestBody UserDto userDto, @NonNull HttpServletRequest request){
+        String jwt = (request.getHeader("Authorization")).substring(7);
+        User user = userService.addUser(userDto, jwt);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
     @PutMapping("/update/{id}")
@@ -43,13 +47,16 @@ public class UserController {
     }
     @GetMapping("/with-device/{userId}/{deviceId}")
     public ResponseEntity<?> userWithDevice(@PathVariable ("userId") Long userId,
-                                            @PathVariable ("deviceId") Long deviceId){
-        userService.userWithDevices(userId, deviceId);
+                                            @PathVariable ("deviceId") Long deviceId,
+                                            @NonNull HttpServletRequest request){
+        String jwt = (request.getHeader("Authorization")).substring(7);
+        userService.userWithDevices(userId, deviceId, jwt);
         return new ResponseEntity<>(HttpStatus.OK);
     }
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteUser(@PathVariable("id") Long id){
-        userService.deleteUser(id);
+    public ResponseEntity<?> deleteUser(@PathVariable("id") Long id,  @NonNull HttpServletRequest request){
+        String jwt = (request.getHeader("Authorization")).substring(7);
+        userService.deleteUser(id, jwt);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

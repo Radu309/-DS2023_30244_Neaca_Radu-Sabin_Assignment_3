@@ -31,12 +31,19 @@ const listItemStyle = {
 const DeviceList = ({ userDevices, userName, setMeasurements }) => {
     const [date, setDate] = useState(null);
     const [deviceId, setDeviceId] = useState(0);
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     useEffect(() => {
         if (deviceId === 0)
             setMeasurements(null)
         else {
-            axios.get('http://localhost:8083/measurement/find-device/' + deviceId)
+            axios.get('http://localhost:8083/measurement/find-device/' + deviceId,
+                {
+                    headers: {
+                        "Authorization": "Bearer " + user.token,
+                        'Content-Type': 'application/json',
+                    },
+                })
                 .then((response) => {
                     const filteredMeasurements = response.data.filter((dateMeasurement) => {
                         return timeStampTranslated(dateMeasurement.timeStamp, date)

@@ -4,16 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="chatService module + assignment2">
+    <list default="true" id="010a46ca-2d0a-45e6-9916-06e3f938bbf2" name="Changes" comment="assignment3 1/2 READY (chat service ready)">
+      <change afterPath="$PROJECT_DIR$/chat_service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/config/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring_service/src/main/java/project/monitoring_service/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monitoring_service/src/main/java/project/monitoring_service/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_14_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_5.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/java/com/example/chat_service/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/chat_service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ChatBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ChatBox.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/ChatBoxClient.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/device_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/device_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/controller/DeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/device_service/src/main/java/com/example/device_service/controller/DeviceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/device_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/device_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CreateDeviceGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CreateDeviceGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/CreateUserGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/CreateUserGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DeviceList.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/DeviceList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/DevicesGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/DevicesGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditDeviceGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditDeviceGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/EditUserGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/EditUserGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/MappingGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/MappingGrid.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/UsersGrid.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/UsersGrid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/AdminPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/AdminPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/ClientPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/ClientPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/LogInPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/LogInPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring_service/src/main/java/project/monitoring_service/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring_service/src/main/java/project/monitoring_service/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitoring_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitoring_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/WebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/config/WebConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/java/com/example/user_service/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user_service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +110,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6c05c1b8aab644313fb23850d4d2ce13&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;666340d13c4e53c73e502f9358478458&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;
   }
 }</component>
@@ -97,22 +126,9 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ChatServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
-      <module name="RabbitMQ_producer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SecondApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.SecondApp" />
       <module name="RabbitMQ_producer" />
       <extension name="coverage">
         <pattern>
@@ -161,14 +177,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml.device-container: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="device_service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="device-service:latest" />
+          <option name="buildOnly" value="true" />
+          <option name="sourceFilePath" value="device_service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="device-container" />
-            </list>
-          </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -187,23 +208,24 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="monitoring_service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="imageTag" value="monitoring-service:latest" />
+          <option name="buildOnly" value="true" />
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="monitoring_service/Dockerfile" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.SecondApp" />
       <item itemvalue="Application.App" />
-      <item itemvalue="Docker.docker-compose.yml.device-container: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yml.monitoring-container: Compose Deployment" />
+      <item itemvalue="Docker.device_service/Dockerfile" />
+      <item itemvalue="Docker.monitoring_service/Dockerfile" />
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="npm.start" />
       <item itemvalue="Spring Boot.ChatServiceApplication" />
       <item itemvalue="Spring Boot.MonitoringServiceApplication" />
       <item itemvalue="Spring Boot.UserServiceApplication" />
@@ -211,11 +233,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="Application.SecondApp" />
         <item itemvalue="Docker.docker-compose.yml.monitoring-container: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.device-container: Compose Deployment" />
+        <item itemvalue="Docker.monitoring_service/Dockerfile" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.device_service/Dockerfile" />
       </list>
     </recent_temporary>
   </component>
@@ -281,7 +303,16 @@
       <workItem from="1702475825236" duration="3763000" />
       <workItem from="1702492284683" duration="27000" />
       <workItem from="1702492811849" duration="53000" />
-      <workItem from="1702500355713" duration="16180000" />
+      <workItem from="1702500355713" duration="16539000" />
+      <workItem from="1702810498961" duration="30000" />
+      <workItem from="1702824357014" duration="479000" />
+      <workItem from="1702904578729" duration="26210000" />
+      <workItem from="1702981472107" duration="3426000" />
+      <workItem from="1702988339725" duration="50000" />
+      <workItem from="1702989551131" duration="1465000" />
+      <workItem from="1702991330802" duration="6071000" />
+      <workItem from="1702998683083" duration="3117000" />
+      <workItem from="1703001829463" duration="3244000" />
     </task>
     <task id="LOCAL-00001" summary="testing">
       <created>1697558180438</created>
@@ -395,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1702476311308</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="assignment3 1/2 READY (chat service ready)">
+      <created>1702567500171</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1702567500171</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,7 +470,8 @@
     <MESSAGE value="admin can chat with multiple clients from user_service." />
     <MESSAGE value="chatService module init" />
     <MESSAGE value="chatService module + assignment2" />
-    <option name="LAST_COMMIT_MESSAGE" value="chatService module + assignment2" />
+    <MESSAGE value="assignment3 1/2 READY (chat service ready)" />
+    <option name="LAST_COMMIT_MESSAGE" value="assignment3 1/2 READY (chat service ready)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

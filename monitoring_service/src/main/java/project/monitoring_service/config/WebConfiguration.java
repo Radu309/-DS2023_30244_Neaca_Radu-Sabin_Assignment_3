@@ -3,9 +3,11 @@ package project.monitoring_service.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
+@EnableWebMvc
 public class WebConfiguration {
     @Bean
     public WebMvcConfigurer corsConfigurer(){
@@ -16,7 +18,6 @@ public class WebConfiguration {
                         .allowedOrigins("http://localhost:3000")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
-                        .exposedHeaders("Access-Control-Allow-Origin")
                         .allowCredentials(true);
             }
         };

@@ -10,6 +10,7 @@ function App() {
         id: null,
         name: "",
         email: "",
+        token: "",
         userRole: "",
     };
     const [user, setUser] = useState(storedUser);

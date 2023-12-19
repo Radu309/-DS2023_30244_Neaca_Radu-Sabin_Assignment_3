@@ -43,10 +43,16 @@ const chatStyle = {
 const UsersGrid = (props) => {
     const users = props.users;
     const [usersMessages, setUsersMessages] = useState([]);
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     const handleButtonClick = (userId) => {
-        axios
-            .delete(`${process.env.REACT_APP_USER_SERVICE}/user/delete/${userId}`)
+        axios.delete(`${process.env.REACT_APP_USER_SERVICE}/user/delete/${userId}`,
+                {
+                    headers: {
+                        "Authorization": "Bearer " + user.token,
+                        'Content-Type': 'application/json',
+                    },
+                })
             .then((response) => {
                 props.setUpdateUser((prevState) => !prevState);
                 props.setUpdateDevice((prevState) => !prevState);

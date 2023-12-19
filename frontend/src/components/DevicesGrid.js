@@ -33,10 +33,16 @@ const buttonStyle = {
 
 const DevicesGrid = (props) => {
     const devices = props.devices;
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     const handleButtonClick = (deviceId) => {
-        axios
-            .delete(`${process.env.REACT_APP_DEVICE_SERVICE}/device/delete/${deviceId}`)
+        axios.delete(`${process.env.REACT_APP_DEVICE_SERVICE}/device/delete/${deviceId}`,
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then((response) => {
                 props.setUpdateUser((prevState) => !prevState);
                 props.setUpdateDevice((prevState) => !prevState);

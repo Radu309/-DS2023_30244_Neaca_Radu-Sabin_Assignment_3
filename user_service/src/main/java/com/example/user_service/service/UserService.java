@@ -43,7 +43,7 @@ public class UserService {
         return userRepository.findAll();
     }
     @Transactional
-    public User addUser(UserDto newUser) throws RestClientException{
+    public User addUser(UserDto newUser, String jwt) throws RestClientException{
         if(userRepository.findByEmail(newUser.getEmail()).isEmpty()) {
             var user = User.builder()
                 .name(newUser.getName())
@@ -55,6 +55,7 @@ public class UserService {
 
             HttpHeaders headers = new HttpHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
+            headers.set("Authorization", "Bearer " + jwt);
 
             Long userId = userRepository.findByEmail(newUser.getEmail()).get().getId();
             String endpoint = deviceServerUrl + "/device/add-user/" + userId;
@@ -75,18 +76,20 @@ public class UserService {
         }
     }
     @Transactional
-    public void userWithDevices(Long userId, Long deviceId){
+    public void userWithDevices(Long userId, Long deviceId, String jwt){
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("Authorization", "Bearer " + jwt);
         String endpoint = deviceServerUrl + "/device/" + deviceId  + "/" + userId;
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         restTemplate.exchange(endpoint, HttpMethod.GET, requestEntity, String.class);
     }
     @Transactional
-    public void deleteUser(Long id) {
+    public void deleteUser(Long id, String jwt) {
         userRepository.deleteById(id);
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+        headers.set("Authorization", "Bearer " + jwt);
         String endpoint = deviceServerUrl + "/device/delete/user/" + id;
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         restTemplate.exchange(endpoint, HttpMethod.DELETE, requestEntity, String.class);

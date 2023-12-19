@@ -28,8 +28,16 @@ const CreateDeviceGrid = (props) => {
         address: '',
         hours: '',
     });
+    const user = JSON.parse(localStorage.getItem('user') || null);
+
     const createDevice = () => {
-        axios.post(process.env.REACT_APP_DEVICE_SERVICE + "/device/add", newDevice)
+        axios.post(process.env.REACT_APP_DEVICE_SERVICE + "/device/add", newDevice,
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then(response => {
                 setUpdateDevice(prevState => !prevState);
             });

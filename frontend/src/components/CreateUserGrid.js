@@ -31,11 +31,19 @@ const CreateUserGrid = (props) => {
         password: '',
         userRole: 'Client',
     });
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     const createUser = () => {
+        console.log(user)
         newUser.userRole = newUser.userRole.toString().toUpperCase();
-        axios.post(process.env.REACT_APP_USER_SERVICE + "/user/add", newUser)
-            .then(response => {
+        axios.post(process.env.REACT_APP_USER_SERVICE + "/user/add", newUser,
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
+            .then((response) => {
                 setUpdateUser(prevState => !prevState);
             });
     };

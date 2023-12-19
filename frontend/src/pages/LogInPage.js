@@ -48,6 +48,7 @@ const LogInPage = (props) => {
             .then((response) => {
             if (response.data.length !== 0) {
                 setUser(response.data);
+                console.log(response.data)
                 if (response.data.userRole === "CLIENT")
                     history.push('/client', {user: response.data});
                 if (response.data.userRole === "ADMIN")

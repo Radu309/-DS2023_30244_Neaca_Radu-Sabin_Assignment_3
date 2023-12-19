@@ -53,6 +53,11 @@ public class DeviceController {
         deviceService.addUser(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+    @GetMapping("/login/add-user/{id}")
+    public ResponseEntity<?> addUserRegister(@PathVariable ("id") Long id){
+        deviceService.addUser(id);
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
     @GetMapping("/{deviceId}/{userId}")
     public ResponseEntity<?> saveDeviceToUser(@PathVariable("userId") Long userid,
                                               @PathVariable("deviceId") Long deviceId){

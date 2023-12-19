@@ -7,8 +7,6 @@ import MappingGrid from '../components/MappingGrid';
 import axios from 'axios';
 import EditDeviceGrid from "../components/EditDeviceGrid";
 import EditUserGrid from "../components/EditUserGrid";
-import ChatBox from "../components/ChatBox";
-import ChatIcon from "../images/ChatIcon.svg"
 
 const containerStyleColumn = {
     display: 'flex',
@@ -44,14 +42,28 @@ const AdminPage = () => {
     const [devices, setDevices] = useState([]);
     const [updateUser, setUpdateUser] = useState(false);
     const [updateDevice, setUpdateDevice] = useState(false);
+    const user = JSON.parse(localStorage.getItem('user') || null);
 
     useEffect(() => {
-        axios.get(process.env.REACT_APP_USER_SERVICE + '/user/all')
+        console.log(user.token)
+        axios.get(process.env.REACT_APP_USER_SERVICE + '/user/all',
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },
+            })
             .then((response) => {setUsers(response.data);})
             .catch(() => {setUsers([])});
     }, [updateUser]);
+
     useEffect(() => {
-        axios.get(process.env.REACT_APP_DEVICE_SERVICE + '/device/all')
+        axios.get(process.env.REACT_APP_DEVICE_SERVICE + '/device/all',
+            {
+                headers: {
+                    "Authorization": "Bearer " + user.token,
+                    'Content-Type': 'application/json',
+                },})
             .then((response) => {setDevices(response.data)})
             .catch(() => {setDevices([])});
     }, [updateDevice]);

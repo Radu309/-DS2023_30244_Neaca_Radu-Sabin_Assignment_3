@@ -54,7 +54,7 @@ public class AuthenticationService {
         headers.setContentType(MediaType.APPLICATION_JSON);
 
         Long userId = repository.findByEmail(request.getEmail()).get().getId();
-        String endpoint = deviceServerUrl + "/device/add-user/" + userId;
+        String endpoint = deviceServerUrl + "/device/login/add-user/" + userId;
         HttpEntity<String> requestEntity = new HttpEntity<>(headers);
         restTemplate.exchange(endpoint, HttpMethod.GET, requestEntity, String.class);
 
